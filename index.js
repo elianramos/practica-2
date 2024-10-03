@@ -1,5 +1,5 @@
-function holaMundo() {
-    return "Hola Mundo 1";
-}
+const holaMundo = require('./index');
 
-module.exports = holaMundo;
+test('Devuelve Hola Mundo', () => {
+    expect(holaMundo()).toBe("Hola Mundo");
+});
